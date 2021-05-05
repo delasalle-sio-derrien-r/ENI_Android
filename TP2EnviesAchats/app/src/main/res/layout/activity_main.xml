@@ -72,8 +72,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/internet_32"
-            android:onClick="onClickImageButton"/>
+            app:srcCompat="@drawable/internet_32" />
 
         <ToggleButton
             android:id="@+id/btn_buy"

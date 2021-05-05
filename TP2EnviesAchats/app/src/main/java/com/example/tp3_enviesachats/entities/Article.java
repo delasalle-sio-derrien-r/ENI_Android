@@ -1,18 +1,22 @@
 package com.example.tp3_enviesachats.entities;
 
-public class Article {
-    String name;
-    float price;
-    String description;
-    int rating;
-    boolean bought;
+import java.io.Serializable;
 
-    public Article(String name, float price, String description, int rating, boolean bought) {
+public class Article implements Serializable {
+    private String name;
+    private float price;
+    private String description;
+    private int rating;
+    private boolean bought;
+    private String url;
+
+    public Article(String name, float price, String description, int rating, boolean bought, String url) {
         this.name = name;
         this.price = price;
         this.description = description;
         this.rating = rating;
         this.bought = bought;
+        this.url = url;
     }
 
     public String getName() {
@@ -53,5 +57,13 @@ public class Article {
 
     public void setBought(boolean bought) {
         this.bought = bought;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
